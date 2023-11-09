@@ -1,0 +1,168 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../public/ethereum-background.jpg);
+  width: 100%;
+  height: 100%;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.first-column {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 50vw;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 50vw;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contract {
+  margin: 15px;
+  padding: 50px;
+  margin-left: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #bc8f8f40;
+}
+
+.existing-contracts,
+.converter {
+  margin: 15px;
+  padding: 50px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #bc8f8f40;
+}
+
+p {
+  text-indent: 1%;
+}
+
+h1 {
+  margin: 10px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #b8cad4;
+  border-bottom: 1px solid #eee;
+  text-shadow: 0.15em 0.15em 0.15em #000;
+}
+
+.contract-inputs {
+  font-weight: bold;
+  text-indent: 1%;
+  padding-top: 5px;
+}
+
+label {
+  padding-bottom: 5px;
+}
+
+input {
+  margin: 5px;
+}
+
+.depositer-address {
+  margin: 10px;
+  text-indent: 1%;
+  color: #f4a460;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+  text-shadow: 0.15em 0.15em 0.15em #000;
+}
+
+.instructions-list {
+  margin: 10px;
+  color: #eee;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+  text-align: justify;
+  text-shadow: 0.15em 0.15em 0.15em #000;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #b8cad4;
+  text-shadow: 0.15em 0.15em 0.15em #000;
+  margin: 10px;
+}
+
+input {
+  padding: 5px;
+  font-size: 15px;
+  opacity: 0.6;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-indent: 1%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #ffbc00 0, #b88d14 100%);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #6d351a;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  height: 45px;
+  padding: 25px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button:focus {
+  box-shadow: #dfa630 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #6d351a 0 -3px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #6d351a 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #dfa630 0 3px 7px inset;
+  transform: translateY(2px);
+}
